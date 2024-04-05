@@ -82,7 +82,7 @@ async def process_endpoint(page_url: str):
     process_images(page_url)
     return {"message": "Images have been processed"}
 
-base_url = "https://kubatura.ru/mebel/divany-i-kresla/"
+base_url = "https://your_website/page/"
 page_urls = [base_url] + [f"{base_url}page-{i}/" for i in range(2, 40)]
 
 for url in page_urls:
